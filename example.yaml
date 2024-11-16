@@ -62,18 +62,17 @@ spec:
   rules:
   - http:
       paths:
-      - pathType: Prefix
+      - pathType: ImplementationSpecific
         path: /foo(/|$)(.*)
         backend:
           service:
             name: foo-service
             port:
               number: 8080
-      - pathType: Prefix
+      - pathType: ImplementationSpecific
         path: /bar(/|$)(.*)
         backend:
           service:
             name: bar-service
             port:
               number: 8080
----

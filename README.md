@@ -17,7 +17,6 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main
 
 ### Deploy Application
 ```bash
-# Warning is expected: https://github.com/kubernetes-sigs/kind/issues/3356
 kubectl apply -f example.yaml
 
 # Test:
